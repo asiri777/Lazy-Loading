@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { ProductModule } from './product/product.module';
-import { ProfileModule } from './profile/profile.module';
+// import { ProductModule } from './product/product.module';
+// import { ProfileModule } from './profile/profile.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -16,8 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    ProductModule,
-    ProfileModule,
+    // ProductModule,
+    // ProfileModule,
     BrowserAnimationsModule
   ],
   providers: [],

@@ -6,10 +6,16 @@ import { ProductComponent } from './product/product/product.component';
 import { ProfileComponent } from './profile/profile/profile.component';
 
 const routes: Routes = [
-  { path: 'product', component: ProductComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: 'product', loadChildren: () => import('./product/product.module').then(m => m.ProductModule) },
+  { path: 'profile', loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule) },
   { path: '', component: HomeComponent }
 ];
+
+// const routes: Routes = [
+//   { path: 'product', component: ProductComponent },
+//   { path: 'profile', component: ProfileComponent },
+//   { path: '', component: HomeComponent }
+// ];
 
 @NgModule({
   declarations: [],
